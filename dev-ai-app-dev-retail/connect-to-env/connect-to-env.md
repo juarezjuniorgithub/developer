@@ -20,6 +20,10 @@ Estimated Time: 5 minutes
 
     ![Login](./images/jupyter-login.png " ")
 
+1. Click the blue "+". This will open the Launcher. 
+
+    ![Open Launcher](./images/launcher.png " ")
+
 ## Task 2: Get familiar with the development environment
 
 1. Review the different elements in JupyterLab:
@@ -50,6 +54,6 @@ In this lab you logged into the **IDE Development Environment** for Jupyter Labs
 
 
 ## Acknowledgements
-* **Author** - Kamryn Vinson
-* **Contributors** -  Linda Foinding, Francis Regalado, Kevin Lazarz
-* **Last Updated By/Date** - Kamryn Vinson, April 2025
+* **Author** - Linda Foinding
+* **Contributors** -  Linda Foinding, Francis Regalado
+* **Last Updated By/Date** - Linda Foinding, April 2025

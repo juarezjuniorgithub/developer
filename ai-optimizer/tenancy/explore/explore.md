@@ -10,7 +10,7 @@ Estimated Time: 15 minutes
 
 In this lab, you will:
 
-* Set the connection to your Oracle Database 23ai
+* Set the connection to your Oracle AI Database 26ai
 * Set your Oracle Cloud Infrastructure credentials for OCI connectivity
 * Configure the LLMs and embedding models you will use in the following labs
 * Test the *Chat* feature for the first time
@@ -25,11 +25,11 @@ This lab assumes you have:
 
 Let's check if the DB is correctly connected.
 
-1. Navigate to the *Databases* tab on the left side pane:
+1. Navigate to the *Configuration* tab on the left side pane and then click on the *Databases* tab from the upper menu:
 
-  ![Navigate to the Databases tab](images/database-navigation.jpg)
+  ![Navigate to the Databases tab](images/database-navigation.png)
 
-1. To configure the Oracle Database 23ai Free, you will need to enter the credentials:
+1. To configure the Oracle AI Database 26ai Free, you will need to enter the credentials:
 
     * Enter the Database Username
     * Enter the Database Connection String
@@ -40,15 +40,12 @@ Let's check if the DB is correctly connected.
   
   ![Database configuration](images/database-config.png)
 
-1. Since you are using an Autonomous Database, you can activate the SelectAI functionality. You will need to create a [Select AI](https://www.oracle.com/it/autonomous-database/select-ai/) profile and eventually you'll find the list of active profiles within the tenancy:
-
-  ![Select AI Profiles](images/selectai-profiles.png)
 
 ## Task 2: Configure LLMs
 
 Let's check the models available for use. You'll need to navigate to the *Models* tab:
 
-  ![models menu](images/models.jpg)
+  ![models menu](images/models.png)
 
 * The default LLMs for chat completions are:
 
@@ -68,13 +65,13 @@ Now you are all set for using the *Chat* feature with the LLMs you just configur
 
 The two LLMs availble could be tested right away, in order to understand their behavior with generic questions. First of all, navigate to the chat GUI
 
-![chat](images/chat.jpg)
+![chat](images/chat.png)
 
-scroll down the left-side menu to find the **Toolkit** menu:
+as no Vector Store has been created yet, you will be able to use the LLM only functionality only, for now:
 
-![toolkit menu](images/toolkit-menu.png)
+![toolkit menu](images/chat-interface.png)
 
-select the **LLM Only** option and then choose the **llama3.1** model:
+scroll down the left-hand side menu and then pick the **llama3.1** model:
 
 ![chat models](images/chatmodel.png)
 
@@ -102,9 +99,9 @@ Moreover, the LLM tends to answer in a generic way, with no specific mention to 
 
 The Optimizer lets you configure the connection to your OCI tenant for retrieving objects from the *Object Storage* and accessing LLMs from the OCI GenAI service. In the *OCI* configuration tab, you can add your **Oracle Cloud Infrastructure** (OCI) credentials to authenticate to your OCI tenancy. This will enable access to objects and documents stored in your cloud compartments.
 
-1. Navigate to the *OCI* tab on the left-hand pane:
+1. Navigate to the *OCI* tab on the *Configuration* window:
 
-  ![Navigate to the Databases tab](images/oci-navigation.jpg)
+  ![Navigate to the Databases tab](images/oci-navigation.png)
 
 1. Insert your OCI credentials. Detailed information on how to get the required credentials is available in the [Oracle Cloud Infrastructure Documentation](https://docs.oracle.com/en-us/iaas/Content/API/Concepts/apisigningkey.htm#Required_Keys_and_OCIDs).
 
@@ -126,4 +123,4 @@ You may now **proceed to the next lab**.
 
 * **Author** - Lorenzo De Marchis, Developer Evangelist, May 2025
 * **Contributors** - Mark Nelson, John Lathouwers, Corrado De Bari, Jorge Ortiz Fuentes, Andy Tael
-* **Last Updated By** - Andy Tael, July 2025
+* **Last Updated By** - Lorenzo De Marchis, February 2026
